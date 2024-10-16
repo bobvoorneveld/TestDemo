@@ -6,15 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		9D0662512CC012DD00E56E1E /* TestingPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 9D0662502CC012DD00E56E1E /* TestingPackage */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		9D379F482CC00EF200F3C224 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9D379F2E2CC00EF000F3C224 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9D379F352CC00EF000F3C224;
-			remoteInfo = TestDemo;
-		};
-		9D379F522CC00EF200F3C224 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9D379F2E2CC00EF000F3C224 /* Project object */;
 			proxyType = 1;
@@ -24,9 +21,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9D06626E2CC0142800E56E1E /* TestingPackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = TestingPackage; path = ../TestingPackage; sourceTree = SOURCE_ROOT; };
 		9D379F362CC00EF000F3C224 /* TestDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D379F472CC00EF200F3C224 /* TestDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D379F512CC00EF200F3C224 /* TestDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -40,11 +37,6 @@
 			path = TestDemoTests;
 			sourceTree = "<group>";
 		};
-		9D379F542CC00EF200F3C224 /* TestDemoUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = TestDemoUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,17 +44,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D0662512CC012DD00E56E1E /* TestingPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		9D379F442CC00EF200F3C224 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9D379F4E2CC00EF200F3C224 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -77,8 +63,8 @@
 			children = (
 				9D379F382CC00EF000F3C224 /* TestDemo */,
 				9D379F4A2CC00EF200F3C224 /* TestDemoTests */,
-				9D379F542CC00EF200F3C224 /* TestDemoUITests */,
 				9D379F372CC00EF000F3C224 /* Products */,
+				9D06626E2CC0142800E56E1E /* TestingPackage */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,7 +73,6 @@
 			children = (
 				9D379F362CC00EF000F3C224 /* TestDemo.app */,
 				9D379F472CC00EF200F3C224 /* TestDemoTests.xctest */,
-				9D379F512CC00EF200F3C224 /* TestDemoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +97,7 @@
 			);
 			name = TestDemo;
 			packageProductDependencies = (
+				9D0662502CC012DD00E56E1E /* TestingPackage */,
 			);
 			productName = TestDemo;
 			productReference = 9D379F362CC00EF000F3C224 /* TestDemo.app */;
@@ -140,29 +126,6 @@
 			productReference = 9D379F472CC00EF200F3C224 /* TestDemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		9D379F502CC00EF200F3C224 /* TestDemoUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9D379F612CC00EF200F3C224 /* Build configuration list for PBXNativeTarget "TestDemoUITests" */;
-			buildPhases = (
-				9D379F4D2CC00EF200F3C224 /* Sources */,
-				9D379F4E2CC00EF200F3C224 /* Frameworks */,
-				9D379F4F2CC00EF200F3C224 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9D379F532CC00EF200F3C224 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				9D379F542CC00EF200F3C224 /* TestDemoUITests */,
-			);
-			name = TestDemoUITests;
-			packageProductDependencies = (
-			);
-			productName = TestDemoUITests;
-			productReference = 9D379F512CC00EF200F3C224 /* TestDemoUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -180,10 +143,6 @@
 						CreatedOnToolsVersion = 16.0;
 						TestTargetID = 9D379F352CC00EF000F3C224;
 					};
-					9D379F502CC00EF200F3C224 = {
-						CreatedOnToolsVersion = 16.0;
-						TestTargetID = 9D379F352CC00EF000F3C224;
-					};
 				};
 			};
 			buildConfigurationList = 9D379F312CC00EF000F3C224 /* Build configuration list for PBXProject "TestDemo" */;
@@ -195,6 +154,8 @@
 			);
 			mainGroup = 9D379F2D2CC00EF000F3C224;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 9D379F372CC00EF000F3C224 /* Products */;
 			projectDirPath = "";
@@ -202,7 +163,6 @@
 			targets = (
 				9D379F352CC00EF000F3C224 /* TestDemo */,
 				9D379F462CC00EF200F3C224 /* TestDemoTests */,
-				9D379F502CC00EF200F3C224 /* TestDemoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -216,13 +176,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		9D379F452CC00EF200F3C224 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9D379F4F2CC00EF200F3C224 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -246,13 +199,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9D379F4D2CC00EF200F3C224 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -260,11 +206,6 @@
 			isa = PBXTargetDependency;
 			target = 9D379F352CC00EF000F3C224 /* TestDemo */;
 			targetProxy = 9D379F482CC00EF200F3C224 /* PBXContainerItemProxy */;
-		};
-		9D379F532CC00EF200F3C224 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9D379F352CC00EF000F3C224 /* TestDemo */;
-			targetProxy = 9D379F522CC00EF200F3C224 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -477,38 +418,6 @@
 			};
 			name = Release;
 		};
-		9D379F622CC00EF200F3C224 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = VD43MWKKT2;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = nl.bobvoorneveld.TestDemoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = TestDemo;
-			};
-			name = Debug;
-		};
-		9D379F632CC00EF200F3C224 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = VD43MWKKT2;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = nl.bobvoorneveld.TestDemoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = TestDemo;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -539,16 +448,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9D379F612CC00EF200F3C224 /* Build configuration list for PBXNativeTarget "TestDemoUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9D379F622CC00EF200F3C224 /* Debug */,
-				9D379F632CC00EF200F3C224 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9D0662502CC012DD00E56E1E /* TestingPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TestingPackage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9D379F2E2CC00EF000F3C224 /* Project object */;
 }

@@ -8,9 +8,9 @@
 import Testing
 @testable import TestDemo
 
-struct TestDemoTests {
+struct SubFolderTestDemoTests {
 
-    @Test func exampleInProject() async throws {
+    @Test func example() async throws {
         #expect(true)
     }
 
