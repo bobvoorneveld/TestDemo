@@ -14,4 +14,17 @@ struct SubFolderTestDemoTests {
         #expect(true)
     }
 
+    @Test func exampleFalse() async throws {
+        #expect(false)
+    }
+
+    struct StructInStructTests {
+        @Test func functionInSubstruct() {
+            #expect(true)
+        }
+
+        @Test func functionInSubstructThatFailed() {
+            #expect(false)
+        }
+    }
 }
